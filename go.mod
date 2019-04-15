@@ -1,4 +1,4 @@
-module kube-resource-converter
+module kube-resource-unit-converter
 
 go 1.12
 
