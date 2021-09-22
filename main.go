@@ -18,5 +18,10 @@ func main() {
 	input = strings.TrimSuffix(input, "\n")
 
 	quantity := resource.MustParse(input)
-	fmt.Println(quantity.Value())
+
+	if len(os.Args) > 1 && os.Args[1] == "-m" {
+		fmt.Println(quantity.MilliValue())
+	} else {
+		fmt.Println(quantity.Value())
+	}
 }
