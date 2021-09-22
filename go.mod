@@ -1,4 +1,4 @@
-module kube-resource-unit-converter
+module github.com/flant/kube-resource-unit-converter
 
 go 1.12
 
